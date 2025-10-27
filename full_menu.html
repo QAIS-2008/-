@@ -1,161 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>قائمة المنتجات</title>
-  <style>
-    body {
-      font-family: "Cairo", sans-serif;
-      background-color: #fff8f8;
-      margin: 0;
-      padding: 20px;
-      color: #333;
-    }
-
-    h1 {
-      text-align: center;
-      color: #d63384;
-      margin-bottom: 30px;
-    }
-
-    .category {
-      margin-bottom: 40px;
-    }
-
-    .category h2 {
-      color: #b31262;
-      border-bottom: 2px solid #b31262;
-      display: inline-block;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-    }
-
-    .product-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 15px;
-    }
-
-    .product {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 15px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .product:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-
-    .product h3 {
-      color: #333;
-      margin: 0 0 10px;
-      font-size: 18px;
-    }
-
-    .product p {
-      margin: 0;
-      font-size: 15px;
-      color: #555;
-    }
-
-    .price {
-      color: #d63384;
-      font-weight: bold;
-      margin-top: 8px;
-    }
-
-    .order-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      margin-top: 10px;
-      background-color: #25D366;
-      color: white;
-      text-decoration: none;
-      padding: 8px 14px;
-      border-radius: 8px;
-      font-size: 14px;
-      transition: background 0.3s;
-    }
-
-    .order-btn:hover {
-      background-color: #1ebe5d;
-    }
-
-    .order-btn img {
-      width: 18px;
-      height: 18px;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 50px;
-      color: #888;
-      font-size: 14px;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>قائمة منتجات الحلويات 🍰</h1>
-
-  <!-- قسم الكيك -->
-  <div class="category">
-    <h2>🍰 الكيك</h2>
-    <div class="product-list">
-      <div class="product"><h3>كيك ميني لشخصين</h3><p class="price">5 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب كيك ميني لشخصين" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>كيكة فانيلا بحشوة نوتيلا (10 أشخاص)</h3><p class="price">10 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب كيكة فانيلا بحشوة نوتيلا (10 أشخاص)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>كيكة الفراشات بحشوة جليز الفراولة</h3><p class="price">12 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب كيكة الفراشات بحشوة جليز الفراولة" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>كيكة فاخرة (حجم كبير)</h3><p class="price">15 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب كيكة فاخرة حجم كبير" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>كيكة بصورة</h3><p class="price">15 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب كيكة بصورة" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>كيكة ذكرى زواج (7 أشخاص)</h3><p class="price">8 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب كيكة ذكرى زواج (7 أشخاص)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>كيكة يوم الأم (5 أشخاص)</h3><p class="price">7 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب كيكة يوم الأم (5 أشخاص)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>كيكة تخريج (8 أشخاص) بتنسيق جميل واحترافي</h3><p class="price">10 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب كيكة تخريج (8 أشخاص)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>ميني كيك بحشوة لوتس</h3><p class="price">6 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب ميني كيك بحشوة لوتس" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-    </div>
-  </div>
-
-  <!-- قسم الشوكولاتة -->
-  <div class="category">
-    <h2>🍫 الشوكولاتة</h2>
-    <div class="product-list">
-      <div class="product"><h3>شوكولاتة فاخرة مع حشوات (36 حبة)</h3><p class="price">12 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب شوكولاتة فاخرة مع حشوات (36 حبة)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>شوكولاتة أعياد خرفان (50 حبة)</h3><p class="price">5 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب شوكولاتة أعياد خرفان (50 حبة)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>شوكولاتة دبي (الحبة)</h3><p class="price">1.5 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب شوكولاتة دبي (الحبة)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>بوكس شوكولاتة دبي (36 حبة - باكيت هدايا)</h3><p class="price">7 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب بوكس شوكولاتة دبي (36 حبة - باكيت هدايا)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-    </div>
-  </div>
-
-  <!-- قسم الحلويات الصغيرة -->
-  <div class="category">
-    <h2>🧁 الحلويات الصغيرة</h2>
-    <div class="product-list">
-      <div class="product"><h3>كاسات تشيز كيك (بلوبيري - نوتيلا - جليز فراولة)</h3><p class="price">1 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب كاسات تشيز كيك بنكهات مختلفة" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>دونات صغير بنكهة نوتيلا (5 قطع)</h3><p class="price">5 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب دونات صغير نوتيلا (5 قطع)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>كيك بوبس (20 حبة)</h3><p class="price">5 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب كيك بوبس (20 حبة)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>كب كيك نيوكورن (الحبة)</h3><p class="price">0.5 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب كب كيك نيوكورن" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>حبة شكل بوزا</h3><p class="price">0.5 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب حبة شكل بوزا" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-    </div>
-  </div>
-
-  <!-- قسم الكوكيز -->
-  <div class="category">
-    <h2>🍪 الكوكيز</h2>
-    <div class="product-list">
-      <div class="product"><h3>كوكيز صينية (تكفي 6 أشخاص)</h3><p class="price">6 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب كوكيز صينية (6 أشخاص)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>كوكيز حجم وسط</h3><p class="price">8 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب كوكيز حجم وسط" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-      <div class="product"><h3>كوكيز حجم كبير</h3><p class="price">10 دينار</p><a class="order-btn" href="https://wa.me/962772431238?text=مرحبًا، أرغب بطلب كوكيز حجم كبير" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">اطلب الآن عبر واتساب</a></div>
-    </div>
-  </div>
-
-  <footer>
-    <p>📞 للطلبات والتواصل عبر واتساب متاح دائمًا</p>
-  </footer>
-
-</body>
-</html>
